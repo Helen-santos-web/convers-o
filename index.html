@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversão</title>
+</head>
+<body>
+    <input type="checkbox" name="#" id="toggle" class="toggle-btn">
+
+    <label for="toggle" class="toggle-label"></label>
+    
+
+    <h1> Converter Real para Dolar</h1>
+    <label for="real"> Real</label>
+    <input type="number" name="" id="real">
+    <br>
+
+
+    <button onclick="calcularConversao(5.5)">Converter</button>
+
+    <p> O resultado convertido é: <span id="resultado"></span></p>
+     
+    <script>
+
+        function calcularConversao() {
+            const real = document.getElementById('real').value;
+           
+            const imc = real / (real** 0,5);
+            
+            document.getElementById('resultado').textContent = imc.toFixed(1);
+        }
+
+    </script>
+
+    <footer>Desenvolvido por Helen | &copy</footer>
+
+<script src="btn.js"></script>
+
+
+</body>
+</html>
